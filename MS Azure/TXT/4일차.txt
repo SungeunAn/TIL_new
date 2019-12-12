@@ -1,0 +1,48 @@
+
+WSL2
+
+Internic : 전 세계의 도메인을 관리
+	www.internic.org
+
+github.com/kite01
+	10979F
+	20533E
+	AZ-103 
+github.com/MicrosoftLearning
+
+azure.com/free
+
+CPU Stress Tools
+	http://www.mersenne.org/ftp_root/gimps/p95v298b6.win64.zip
+
+IIS (Internet Information Server)  / MS
+  Web Server 
+  FTP Server
+  SMTP Server
+
+Apache Web Server : Linux/ Unix
+NGINX  Web Server : Linux/ Unix
+
+ARM Template 
+-https://azure.microsoft.com/en-us/resources/templates/
+-https://github.com/Azure/azure-quickstart-templates/tree/master/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

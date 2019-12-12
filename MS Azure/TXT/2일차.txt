@@ -1,0 +1,139 @@
+WS(Windows Server) 2016 시스템에 
+	Acrobat Reader 설치
+	Azure Portal App 설치
+	인터넷 연결 확인
+	
+	
+
+
+net use v: \\70.12.113.130\share 
+
+UNC 경로 : 네트워크의 공유 폴더에 접속 하는 경로 이름(SMB 3.0)
+	\\컴퓨터이름\공유이름		<== 같은 네트워크에서만 접근
+	\\IP_Address\공유이름		
+	\\DNS_Name\공유이름
+
+
+OS 
+   - Client OS
+   - Server OS
+
+TCP/IP : 
+   - Dynamic Configuration (자동 구성, 유동IP): DHCP Server에서 할당 받아온다. 
+	(Client OS)
+	APIPA (Automatic Private IP Address) : DHCP Server에서 IP를 못받아올 경우 
+		OS에서 자동으로 할당하는 IP (169.254.x.x)
+
+   - Static Configuration  (수동 구성, 고정IP) , (Server OS)
+	IP :
+	Subnet Mask : 
+	Gateway : 
+	DNS : 
+
+WS 2016 
+  - Role    : 서버 서비스 (16, Web, FTP, DNS, DHCP, Hyper-V...)
+  - Feature : OS에서 지원해주는 기능(35)
+
+www.centos.org  	(8.0)
+
+Virtual Switch 
+  - External	: 실무에서 사용, VM에 Host OS의 네트워크 대역의 IP 가 할당(VM에 Public IP 할당가능)
+  - Internal	: 테스트나 개발, Private IP 할당. (Host OS 와 VM과 통신 가능, NAT구성시 인터넷 연결)
+  - Private	: 테스트나 개발, Private IP 할당. (VM 과 만 통신 가능)
+
+Virtualization (가상화)
+  - Type 1 : 실무 환경에 사용 (MS Hyper-V, VMware ESX, CTRIX Zen)
+	CPU 에서 가상화 지원, RAM의 DEP 지원
+  - Type 2 : 개발, 테스트    (VMware Workstation , Player, Oracle Virtual BOX
+
+Public IP (공인 IP) : IANA에서 퍼블릭망에서 라우팅 가능한 IP
+
+Private IP (사설 IP) : IANA에서 누구나 사용 가능하도록 허용한 IP, 
+	적은 공인 IP로 많은 시스템을 인터넷 (NAT)
+	보안
+	10.x.x.x
+	172.16.x.x ~172.31.x.x
+	192.168.x.x
+
+Port : 데이터가 전송 되는 통로 (0~65,536) , TCP or UDP 
+	(c:\windows\system32\drivers\etc\services)
+  1 ~ 1024 : 잘알려진 포트 
+	TCP 21 : FTP
+	TCP 22 : SSH
+	TCP 23 : Telnet
+	TCP 25 : SMTP
+	TCP 53 : DNS Zone Transfer
+	UDP 53 : DNS Name Resolution 
+	UDP 67,68 : DHCP
+	TCP 80 : http
+	TCP 443 : https
+	TCP 110 : POP3
+	TCP 3389 : RDP ( Remote Desktop Protocol) : Window Server 원격 관리
+
+   1025 ~ 5000 : Application 
+
+
+<문제>
+  
+L-SVR2 
+    Hostname : L-SVR2.localdomain
+	IP   : 192.168.10.21
+	S/M  : 255.255.255.0
+	G/W  : 192.168.10.1
+	DNS  : 8.8.8.8
+  설치 이후 원격 접속 (Putty)
+
+W-SVR2
+    Hostname : W-SVR2
+	IP   : 192.168.10.11
+	S/M  : 255.255.255.0
+	G/W  : 192.168.10.1
+	DNS  : 8.8.8.8
+  설치 이후 원격 접속 (RDP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

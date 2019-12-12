@@ -1,0 +1,113 @@
+6일차 -  Cloud Shell, Azure CLI, PowerShell (10979 Module 2)
+	Azure DNS, Azure LoadBalancer
+
+Cloud Shell - Azure Portal에서 사용할 수 있는 쉘 (Power Shell, Bash)
+
+PowerShell - Windows 에서 사용 가능한 쉘, (명령어가 길다. 복잡하다.)
+	동사-명사
+Azure CLI - Windows, MAC, LINUX 에서 사용가능한 쉘, (명령어가 짧다. 단순하다.)
+
+
+PowerShell ISE - Power Shell 명령어를 스크립트화 시킬 수 있다. 
+PowerShell Module : PowerShell 명령어 들의 집합. 
+Azure 가상 머신 포털
+https://docs.microsoft.com/ko-kr/azure/virtual-machines/windows/
+
+PowerShell 설치(Azure )
+https://azure.microsoft.com/en-us/downloads/
+
+
+=====Az 모듈 설치 (최신) ==========
+정보 URL : https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.8.0&viewFallbackFrom=azps-1.2.0
+
+Install-Module -Name Az -AllowClobber	# Az 모듈 설치
+Set-ExecutionPolicy Unrestricted		# 실행 정책 허용
+import-module Az.Accounts			# 모듈 등록
+
+Connect-AzAccount
+Get-AzSubscription
+Select-AzSubscription -Subscription <Subscription ID> 
+
+====AzureRM 모듈 설치(옛날)(x)==================
+정보 URL : https://docs.microsoft.com/ko-kr/powershell/azure/azurerm/install-azurerm-ps?view=azurermps-6.13.0
+Install-Module -Name AzureRM -AllowClobber
+Import-Module AzureRM
+
+Connect-AzureRMAccount
+Get-AzureRMSubscription
+Select-AzureRMSubscription -Subscription <Subscription ID> 
+
+
+======================
+
+Azure CLI 설치
+ 
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest 
+azure-cli-2.0.63.msi  <== 설치 
+
+az
+az login
+az account list		<== Subscription 출력
+az account set --subscription <value of the subscription id property>
+
+
+
+
+
+
+Github
+https://github.com/MicrosoftLearning/10979-Introduction-to-Azure-for-IT-Professionals/blob/master/Instructions/10979F_LAB_AK_02.md
+
+==============
+Get-Command 
+Get-Process 
+Get-Help Get-Process # Power Shell 주석
+$env:PSModulePath
+
+Install-Module -Name Az -AllowClobber	1. Azure Module 설치
+
+import-module Az.Accounts			2. Azure Module 등록
+
+Connect-AzAccount
+
+Get-ExecutionPolicy # PowerShell 스크립트 실행 정책 
+    # Rescricted  : 제한됨 (*.ps1 파일)
+    # Unrestricted : 실행 (보안상 위험)
+
+Set-ExecutionPolicy Unrestricted
+
+
+
+===========
+
+VPN : 원격에서 회사 네트워크 접근
+  
+ 터널링 
+   - PPTP (x)
+   - L2TP / IPSec 
+   - SSTP : TCP 443 (SSL)
+   - IKEv2 : 세션을 서버에서 자동을 접속 
+
+VM availability set
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 

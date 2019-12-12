@@ -1,0 +1,75 @@
+7일차 - Azure Storage, Azure SQL, Azure DNS
+	docs.microsoft.com/ko-kr/azure
+ 	docs.microsoft.com/ko-kr/learn
+
+	평가판 - MS의 모든 제품
+	https://www.microsoft.com/ko-kr/evalcenter/
+
+Azure Storage Explorer
+	https://azure.microsoft.com/ko-kr/features/storage-explorer/
+
+.Net Framework 4.8
+	https://dotnet.microsoft.com/download/dotnet-framework/net48?utm_source=getdotnet&utm_medium=referral
+
+Azure Status : 
+	
+
+anonymous : 익명 사용자 ( ID 와 패스워드 없는)
+
+Blob Storage Access URL 
+https://<Storage Account>.blob.core.windows.net/share/pdf/10979F_00.pdf
+https://pjw1211sg1.blob.core.windows.net/share/pdf/10979F_00.pdf
+
+shared access signature (SAS)
+
+공유 포트 (SMB3.0), wf.msc (고급 방화벽), NSG ( Network Security Group )
+  TCP 445	<== SMB3.0 을 사용할 경우
+  TCP 139
+  UDP 138
+  UDP 137
+	net use y: \\IP\share /u:admin
+
+
+SQL Query
+
+
+Create Database MyTestDB;
+go
+
+use MyTestDB;
+go 
+
+Create Table MyTestTBL2 
+	( idx int not null identity primary key,
+	name char(10) not null ,
+	mail varchar(100) null );
+go
+
+Select * from MyTestTBL2;
+go
+
+Insert into MyTestTBL2 
+Values ( '김똘똘', 'aaa@aaa.com');
+
+Insert into MyTestTBL2 
+Values ( '홍똘순', 'bbb@bbb.com');
+go
+
+SSMS ( SQL Server Management Studio ) 
+   - Local , Remote SQL Server 관리 툴
+
+	TCP 1433 	<= MS SQL 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

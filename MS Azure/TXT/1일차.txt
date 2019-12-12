@@ -1,0 +1,55 @@
+www.sysinternals.com
+
+compmgmt.msc	<== 컴퓨터 관리
+
+multi	Pa55w.rd
+
+암호 복잡성 : 대문자 + 소문자 + 숫자 + 특수문자 중 3가지 이상 조합
+
+Policy (정책) : gpedit.msc
+
+ipconfig /all
+ncpa.cpl
+
+www.outlook.com	<== 계정 생성 (Azure) 
+
+www.google.com	<== acrobat reader 설치
+
+https://www.microsoftazurepass.com/  <== Azure Pass 등록(20만원)
+
+portal.azure.com/	<== 에져 포털
+
+azure.com	( azure.microsoft.com/ko-kr)
+
+
+Hyper-V 설치 : 제어판 ==> 프로그램 추가 / 제거 => Windows 기능 켜기 / 끄기=> 
+
+
+Administrator	Pa55w.rd
+
+Host OS : Hardware 에 직접 설치된 OS (Windows 10 Entprise)
+VM(Virtual Machine) : Hyper-V 환경에 설치된 OS (Windows Server 2016)
+	= Guest OS
+
+VHD Booting : VM을 Host OS 환경으로 구현 
+
+	.vhd   <== 가상하드 파일 (VM OS), 2008
+	.vhdx  <== 가상하드 파일 (VM OS),2012, 2016,2019 
+
+	bcdboot f:\windows	
+
+	msconfig
+
+
+MS의 모든 Software 평가판 다운 주소 
+https://www.microsoft.com/ko-kr/evalcenter
+	
+
+
+
+
+
+
+
+
+

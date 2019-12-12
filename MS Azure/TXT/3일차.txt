@@ -1,0 +1,59 @@
+3일차
+NAT (Network Address Translation) : 사설 IP가 인터넷 망을 사용하기 위해서 
+   패킷의 Source Address를 공인 IP Address로 변환해서 인터넷망으로 내보내야 한다. 
+
+IP Address = Network ID + Host ID
+	70.12.113.130	
+	255.255.255.0
+
+Host : 네트워크의 장치 (라우터, 스위치, 프린터, 컴퓨터....)
+Host Name 
+
+   ICS ( Internet Connection Sharing) : 인터넷 연결 공유 
+
+portal.azure.com	<== Azure Portal (54)
+
+docs.microsoft.com/ko-kr/	<= MS의 모든 설명서 
+
+https://docs.microsoft.com/ko-kr/learn/azure/  <==  Azure 실습
+
+
+DNS : 
+  - 이름 풀이(Name Resolution)(A, AAAA) : 
+	FQDN(전체 컴퓨터이름 = Host_Name + Domain_Name)이름을 IP Address로 변환 
+	(www.naver.com)	==> 210.89.160.88
+			(DNS)
+- 서비스의 위치를 알려줌(SRV)
+
+HDD Disk를 서버에 추가 했을 경우 (compmgmt.msc => Disk Management)
+  1. 초기화 ( MBR (2TB), GPT(2TB이상 인식))
+  2. 파티션 생성 
+  3. 포멧 
+  4. 드라이브 문자 할당 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

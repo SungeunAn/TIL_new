@@ -1,0 +1,28 @@
+﻿수행 평가 - 학생 제출 내용 - 5차 C반
+
+1. Cloud 기초 - 이성천 정한음 
+	추가(차유화 김나연, 엄다연, 유기욱, 김건우 )
+2. Cloud Shell, Azure CLI, PowerShell - 박찬, 정서영
+	추가(이은성, 윤희라 김경아, 안선근)	
+3. Azure Virtual Machine - 안선근, 이은성
+	추가(이성천, 박경호, 조준형, 신아영, 김건우)
+4. Azure Virtual Machine Scal Set - 조준형, 오종민
+	추가( 정한음, 이은성, 신아영, 유기욱 )
+5. Auzre Virtual Network ( vNet, NSG)-한미래 김태현
+	추가(박경호, 김경한   )
+6. Azure Storage - 김경한, 김나연
+	추가(이성천 정한음 김경아 엄다연  )
+7. Azure Web App - 차유화, 박경호
+	추가(윤희라, 조현진)
+8. Azure DNS - 윤희라 (목요일 , 수요일 일있음)
+	추가(조현진   )
+9. AAD(Azure Active Directory) - 조현진, 김건우(목)
+	추가( 김태현 고재형 )
+10. Azure LoadBalancer - 신아영
+	추가( 오종민, 박찬,한미래, 안선근  )
+12. Azure VPN - 고재형
+	추가( 정서영, 한미래 김태현, 오종민 )
+13. Azure Container - 유기욱
+	추가( 조준형 김나연 , 김경한 )
+14.  Azure SQL -김경아, 엄다연
+	추가(박찬, 차유화, 정서영, 고재형)
