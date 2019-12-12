@@ -1,10 +1,21 @@
 ## 기타
 
+### cmd
+
 * net use `중요!!` : 공유 폴더를 디스크에 할당
 
 ```bash
 net use x: \\70.12.113.130\PPTShare
 ```
+
+* DNS 캐시 확인 및 삭제 `중요!!`
+
+```bash
+ipconfig /displaydns
+ipconfig /flushdns
+```
+
+---
 
 * MFA : 다단계 인증
 
@@ -50,7 +61,8 @@ net use x: \\70.12.113.130\PPTShare
 * FQDN(Host{www} + Domain Name{naver.com})을 DNS Server를 통해 IP 주소로 변환해 서비스의 위치를 검색하는 것
   DNS Server IP를 설정하지 않으면 IP 주소는 인식하나 FQDN 주소는 인식하지 못한다.
 * DNS Zone 추가 후 발행되는 Name Server를 도메인 상에 등록하면 해당 도메인과 연결된다.
-* Record
+* DNS Zone : DNS DB, 레코드를 담고 있음
+* Record Types
   * SOA : 권한의 시작
   * NS : Name Server 지정
   * A : Host Name > IPv4 주소로 매핑
@@ -58,3 +70,19 @@ net use x: \\70.12.113.130\PPTShare
   * SVR : 서비스의 위치 정보를 알려줌
   * PTR : IP 주소 > Host Name으로 매핑
   * AAAA :  Host Name > IPv6 주소로 매핑
+  * MX : 메일 서버를 지정
+  * TXT : 특정 서버를 지정
+* 이름 풀이 (Name Resolution) : Host 이름을 IP 주소로 변환하는 과정
+  ![image-20191212172440119](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20191212172440119.png)
+  1. DNS Cache (hosts) 확인
+     * 서버 부하를 줄일 수 있음
+     * 서버 변경 내용을 반영하지 않아 부정확한 값을 제공할 수 있음
+     * Cache는 TTL 시간만큼 저장되어 있다가 날아감
+     * 한 번 할당받은 IP나 hosts 파일에 저장된 DNS가 캐시로 메모리에 임시 저장됨
+  2. DNS 서버 확인
+* DNS 쿼리의 종류
+  1. Recursive 쿼리 : Client가 DNS 서버에게 원하는 도메인의 완성된 형태의 IP를 요청하는 쿼리
+  2. Iteractive 쿼리 : DNS 서버가 인터넷 망에 정보를 요청하는 쿼리
+     완성된 정보가 아닌 참조용 정보 요청
+     Root 서버로 시자개 점점 하위의 서버로 정보를 요청해 최종 정보 획득
+     ![image-20191212175252983](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20191212175252983.png)
