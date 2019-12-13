@@ -92,13 +92,19 @@
 
 * docker-compose.yml 파일 : 실행 명령을 스크립트로 작성해서 대수의 Container 실행 자동화
 * 명령어
-  * docker login : 도커 registry에 로그인
+  * docker login : docker registry에 로그인
   * docker pull : registry의 docker 이미지 내려받기
   * docker tag : 이미지 버전 정보
   * docker push : docker 파일 업로드
-  * docker run : docker 다운 + 실행
-  * docker rmi : 
+  * docker run : docker 다운 + container에서 실행
+  * docker rmi :2nd_place_medal: : docker 이미지 삭제
+  * docker rm :2nd_place_medal: : container 삭제
+  * docker ps : docker 작동 여부 확인
 
 
 
 ## AKS (Azure Kubernetes Service)
+
+* Container를 복사하거나 삭제해서 사용자 수요에 맞게 Ochestration(분산 처리) 하는 서비스
+* VM보다 빠르게 조절 가능하다는 장점이 있다.
+* 클러스터 : 여러 서버를 그루핑해서 하나의 서버에서 오류가 나더라도 다른 서버가 이를 대신해주도록 하는 것
