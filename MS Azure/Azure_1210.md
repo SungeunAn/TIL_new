@@ -70,7 +70,7 @@
 
 * **VM Availability** `중요!!` `10979-3 p.10` : 문제가 발생하더라도 서비스 유지할 수 있도록 하는 것
 * **Availability Zone** : 데이터 센터를 복제해 문제 상황에 대비
-  SLA(Service Level Agreement, 서비스 유지율) = 99.999%(1년에 약 5분 이하 서비스 중지 허용)
+  SLA(Service Level Agreement, 서비스 유지율) = 99.99%(1년에 약 5분 이하 서비스 중지 허용)
 * **Availability Set** : 동일한 데이터 센터 내 Rack 단위로 복제해 문제 상황에 대비
   SLA = 99.95%
   Fault Domain : 복제해둘 Rack 개수

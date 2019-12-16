@@ -1,0 +1,30 @@
+
+FQDN=$(az vm show --resource-group demo3 --name myDockerVM --show-details --query [fqdns] --output tsv)
+
+echo $FQDN
+
+ssh ykwdemo@$FQDN
+
+docker run -d -p 80:80 --restart=always nginx
+
+docker ps
+
+
+------------------------------------------------------------------------------------------------------------
+
+nano docker-compose.yml
+
+  version: "2"
+  services:
+    wordpress:
+      image: wordpress
+      links:
+          - db:mysql
+      ports:
+          - 8080:80
+    db:
+       image: mariadb
+       environment:
+         MYSQL_ROOT_PASSWORD: Pa55w.rd
+
+docker-compose up -d

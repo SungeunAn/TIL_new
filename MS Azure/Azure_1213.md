@@ -1,6 +1,6 @@
 ## 시험 문제:1st_place_medal:
 
-* 클라우드 서비스 : 네트워크를 통해 받는 모든 서비스
+* 클라우드 서비스 :  네트워크를 통해 받는 모든 서비스
   웹 브라우저(IE, 크롬, ...)를 통해 클라우드 서비스를 받는다.
 * 클라우드의 종류 : Public / Private / Hybrid 
   대표적 Public 벤더 : 아마존, MS, 구글
@@ -28,12 +28,12 @@
   * PPTP : 보안 문제로 사용 안함
   *  L2TP : 암호화 X > IPSEC과 연동해 암호하
   * SSTP : TCP 443 포트 활용해 자동으로 암호화
-  * IKEv2 : 자동으로 암호화, 서버에서 자동으로 VPN 연결을 해주기 떄문에 자주 끊기는 환경에 유리
+  * IKEv2 : 자동으로 암호화, 서버에서 자동으로 VPN 연결을 해주기 때문에 자주 끊기는 환경에 유리
 * VPN의 종류
 * 호스트 수 계산
 * ping 해서 응답을 받기 위해서는 ICMP 프로토콜을 열어줘야 한다.
 * wf.msc : 방화벽 설정 열기
-* netstst -na : 현재 어떤 컴퓨터와 연결되어 있는지, 어떤 포트가 열려있는지 알 수 있음
+* netstat -na : 현재 어떤 컴퓨터와 연결되어 있는지, 어떤 포트가 열려있는지 알 수 있음
 * ipconfig /all : TCP/IP 확인
 * ipconfig /displaydns : dns 정보 출력
 * ipconfig /flushdns : dns 정보 삭제
@@ -48,7 +48,7 @@
   2. Azure 계정 연결(로그인)
   3. Azure Subscription 확인
   4. Azure Subscription 선택
-* NAT : Network Address Transformaion
+* NAT : Network Address Translation
   사설 IP에서도 네트워크 접근 가능하도록 공인 IP로 주소를 변환해 주는 것
 * Load Balancer(L4) : 부하 분산 처리 기능
   한 데이터 센터 내 부하만 분산처리 가능
@@ -90,7 +90,7 @@
     * [Public Registry](https://hub.docker.com/) : 모든 사람이 접근 가능 
     * Private Registry : 특정 사용자만 접근 가능
 
-* docker-compose.yml 파일 : 실행 명령을 스크립트로 작성해서 대수의 Container 실행 자동화
+* docker-compose.yml 파일 : 실행 명령을 스크립트로 작성해서 다수의 Container 실행 자동화
 * 명령어
   * docker login : docker registry에 로그인
   * docker pull : registry의 docker 이미지 내려받기

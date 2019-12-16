@@ -84,5 +84,5 @@ ipconfig /flushdns
   1. Recursive 쿼리 : Client가 DNS 서버에게 원하는 도메인의 완성된 형태의 IP를 요청하는 쿼리
   2. Iteractive 쿼리 : DNS 서버가 인터넷 망에 정보를 요청하는 쿼리
      완성된 정보가 아닌 참조용 정보 요청
-     Root 서버로 시자개 점점 하위의 서버로 정보를 요청해 최종 정보 획득
+     Root 서버로 시작해 점점 하위의 서버로 정보를 요청해 최종 정보 획득
      ![image-20191212175252983](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20191212175252983.png)
